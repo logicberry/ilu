@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Map data is wrong in OpenStreetMap itself
+    url: https://www.openstreetmap.org/fixthemap
+    about: Missing or wrong buildings and roads are best fixed in OpenStreetMap, which improves every map.
+  - name: Security issue
+    url: https://github.com/logicberry/ilu/security/policy
+    about: Please report security issues privately, not as a public issue.

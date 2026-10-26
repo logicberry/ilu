@@ -1,0 +1,23 @@
+name: Wrong-looking result
+description: The model builds, but buildings, roofs, roads or areas look wrong.
+labels: [quality]
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      description: Place name or bounding box (south,west,north,east).
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong
+      description: A screenshot helps a lot. A link to the building on openstreetmap.org helps even more.
+    validations:
+      required: true
+  - type: textarea
+    id: real
+    attributes:
+      label: What it looks like in reality
+      description: For example "three floors with a hipped zinc roof". Photos are welcome if you took them.

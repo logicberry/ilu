@@ -1,0 +1,35 @@
+name: Bug report
+description: Something is broken, crashes or produces an invalid file.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Ìlú version
+      description: Output of `ilu --version`.
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: The exact command you ran, including the place name or bounding box.
+      placeholder: ilu build "Obafemi Awolowo University" -o oau.glb
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Include the full error output if there was one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: input
+    id: env
+    attributes:
+      label: Python version and operating system
+      placeholder: Python 3.12, macOS 15

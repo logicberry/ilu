@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ilu"
+dynamic = ["version"]
+description = "Turn any OpenStreetMap area into a game-ready 3D model (.glb)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Productree Labs", email = "hello@productreelabs.com" }]
+keywords = ["openstreetmap", "osm", "gltf", "glb", "3d", "gamedev", "procedural", "africa"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Games/Entertainment",
+  "Topic :: Multimedia :: Graphics :: 3D Modeling",
+  "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = []
+
+[project.scripts]
+ilu = "ilu.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "ilu.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.6", "mypy>=1.10", "build>=1.2"]
+
+[project.urls]
+Homepage = "https://github.com/logicberry/ilu"
+Source = "https://github.com/logicberry/ilu"
+Issues = "https://github.com/logicberry/ilu/issues"
+Changelog = "https://github.com/logicberry/ilu/blob/main/CHANGELOG.md"
+
+[tool.setuptools.package-data]
+ilu = ["py.typed"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "C4", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]  # Ìlú is spelt with its Yoruba tone marks
+
+[tool.ruff.lint.per-file-ignores]
+"src/ilu/viewer.py" = ["E501"]  # the embedded HTML page
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["src/ilu"]
