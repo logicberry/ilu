@@ -4,7 +4,7 @@ Thank you for your interest in Ìlú. Bug reports, better building rules, new re
 
 ## Ways to contribute
 
-- **Report a bug**, or a model that looks wrong, using the [issue templates](https://github.com/logicberry/ilu/issues/new/choose).
+- **Report a bug**, or a model that looks wrong, using the [issue templates](https://github.com/productreelabs/ilu/issues/new/choose).
 - **Add a style** for your region (see below). This is a good first contribution.
 - **Improve a rule**, with a fixture that shows the before and after.
 - **Fix the map itself.** Many bad results come from missing data. Adding `building:levels` and `roof:shape` in [OpenStreetMap](https://www.openstreetmap.org) improves Ìlú and every other map.
@@ -16,7 +16,7 @@ For larger changes, open an issue first so we can agree on the approach before y
 Ìlú needs Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/logicberry/ilu.git
+git clone https://github.com/productreelabs/ilu.git
 cd ilu
 python3 -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate

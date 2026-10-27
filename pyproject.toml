@@ -35,10 +35,10 @@ where = ["src"]
 dev = ["ruff>=0.6", "mypy>=1.10", "build>=1.2"]
 
 [project.urls]
-Homepage = "https://github.com/logicberry/ilu"
-Source = "https://github.com/logicberry/ilu"
-Issues = "https://github.com/logicberry/ilu/issues"
-Changelog = "https://github.com/logicberry/ilu/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/productreelabs/ilu"
+Source = "https://github.com/productreelabs/ilu"
+Issues = "https://github.com/productreelabs/ilu/issues"
+Changelog = "https://github.com/productreelabs/ilu/blob/main/CHANGELOG.md"
 
 [tool.setuptools.package-data]
 ilu = ["py.typed"]

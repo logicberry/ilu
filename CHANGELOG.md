@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-27
+
+### Changed
+
+- Ìlú moved to [github.com/productreelabs/ilu](https://github.com/productreelabs/ilu). Old links redirect. No changes to the code or output.
+
 ## [0.1.0] - 2026-10-27
 
 First release.
@@ -30,5 +36,6 @@ First release.
 - Python API: `ilu.fetch`, `ilu.fetch_terrain`, `ilu.fetch_landcover`, `ilu.fetch_canopy`, `ilu.parse`, `ilu.build`, `ilu.build_tiles`, `ilu.tile_index`, `ilu.sidecar`.
 - Overpass download with mirror fallback, `Retry-After` handling, no caching of failed or incomplete replies, an on-disk cache, and `--overpass-url` / `ILU_OVERPASS_URL` for your own server.
 
-[Unreleased]: https://github.com/logicberry/ilu/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/logicberry/ilu/releases/tag/v0.1.0
+[Unreleased]: https://github.com/productreelabs/ilu/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/productreelabs/ilu/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/productreelabs/ilu/releases/tag/v0.1.0

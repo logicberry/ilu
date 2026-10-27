@@ -10,7 +10,7 @@ Output is derived from OpenStreetMap and stays under the ODbL 1.0.
 
 from __future__ import annotations
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 from .build import Result, Tile, build, build_tiles, crop, crop_to_bbox, sidecar, tile_index
 from .opendata import LandCover, TreeTop

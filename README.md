@@ -2,9 +2,9 @@
 
 **Turn any OpenStreetMap area into a game-ready 3D model.**
 
-[![CI](https://github.com/logicberry/ilu/actions/workflows/ci.yml/badge.svg)](https://github.com/logicberry/ilu/actions/workflows/ci.yml)
+[![CI](https://github.com/productreelabs/ilu/actions/workflows/ci.yml/badge.svg)](https://github.com/productreelabs/ilu/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/logicberry/ilu/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/productreelabs/ilu/blob/main/LICENSE)
 
 ```bash
 pip install ilu
@@ -21,7 +21,7 @@ Not sure of the exact name? `ilu find "Oduduwa Hall"` lists matching places, and
 
 The file opens directly in Blender, three.js, Godot and Flutter Scene, and in Unity and Unreal through their glTF importers.
 
-![Obafemi Awolowo University, Ile-Ife, built by Ìlú with --real](https://raw.githubusercontent.com/logicberry/ilu/main/docs/oau-real.jpg)
+![Obafemi Awolowo University, Ile-Ife, built by Ìlú with --real](https://raw.githubusercontent.com/productreelabs/ilu/main/docs/oau-real.jpg)
 
 <sub>Obafemi Awolowo University, Ile-Ife, built with `--real` and shown with `ilu view`. Every hill, forest, clearing and tree comes from data. Map data © OpenStreetMap contributors; elevation Copernicus DEM; land cover ESA WorldCover; tree heights Meta.</sub>
 
@@ -88,7 +88,7 @@ pip install ilu
 To install from source:
 
 ```bash
-git clone https://github.com/logicberry/ilu.git
+git clone https://github.com/productreelabs/ilu.git
 cd ilu
 pip install .
 ```
@@ -368,15 +368,15 @@ If every attempt fails, wait a few minutes and run the command again. For very l
 
 ## Contributing
 
-Contributions are welcome. See [CONTRIBUTING.md](https://github.com/logicberry/ilu/blob/main/CONTRIBUTING.md) for setup, checks and guidelines, and [CHANGELOG.md](https://github.com/logicberry/ilu/blob/main/CHANGELOG.md) for release history.
+Contributions are welcome. See [CONTRIBUTING.md](https://github.com/productreelabs/ilu/blob/main/CONTRIBUTING.md) for setup, checks and guidelines, and [CHANGELOG.md](https://github.com/productreelabs/ilu/blob/main/CHANGELOG.md) for release history.
 
 The quickest way to improve every Ìlú model is to improve the map. Adding [`building:levels`](https://wiki.openstreetmap.org/wiki/Key:building:levels) and [`roof:shape`](https://wiki.openstreetmap.org/wiki/Key:roof:shape) to buildings you know in OpenStreetMap helps Ìlú and everyone else who uses the map.
 
-To report a security issue, see [SECURITY.md](https://github.com/logicberry/ilu/blob/main/SECURITY.md).
+To report a security issue, see [SECURITY.md](https://github.com/productreelabs/ilu/blob/main/SECURITY.md).
 
 ## License
 
-- **Code:** [MIT](https://github.com/logicberry/ilu/blob/main/LICENSE), © 2026 Productree Labs Limited.
+- **Code:** [MIT](https://github.com/productreelabs/ilu/blob/main/LICENSE), © 2026 Productree Labs Limited.
 - **Place search:** results come from [Nominatim](https://nominatim.org) and OpenStreetMap data (© OpenStreetMap contributors, ODbL).
 - **Generated models and JSON:** these are derived from OpenStreetMap data and are licensed under the [Open Database License (ODbL) 1.0](https://www.openstreetmap.org/copyright). If you publish them, credit "© OpenStreetMap contributors".
 - **Data layers:** models built with them include data under these terms. Ìlú prints the credits after each build and writes them into the file; keep them with anything you publish.
